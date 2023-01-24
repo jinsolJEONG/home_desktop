@@ -888,21 +888,550 @@
 //    return 0;
 //}
 
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    int a, b, temp;
+//    cin >> a >> b ;
+//    int* p;
+//    int* t;
+//    p = &a;
+//    t = &b;
+//    temp = * p;
+//     *p = * t ;
+//     *t = temp;
+//
+//    cout << *p << ' ' << *t;
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    int arr[7] = { 3,4,1,3,2,7,3 };
+//    int a;
+//    cin >> a;
+//    int flag;
+//    flag = 0;
+//    for (int i = 0; i < 7; i++)
+//    {
+//        if (arr[i] == a)
+//        {
+//            flag = 1;
+//            break;
+//        }
+//    }
+//    if (flag == 1)
+//    {
+//        cout << "발견";
+//    }
+//    else
+//    {
+//        cout << "미발견";
+//    }
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    int arr[7] = {};
+//    for (int i = 0; i < 7; i++)
+//    {
+//        cin >> arr[i];
+//    }
+//    int max = -99;
+//    int min = 99;
+//    for (int i = 0; i < 7; i++)
+//    {
+//        if (arr[i] > max)
+//        {
+//            max = arr[i];
+//        }
+//    }
+//    for (int i = 0; i < 7; i++)
+//    {
+//        if (arr[i] < min)
+//        {
+//            min = arr[i];
+//        }
+//    }
+//
+//    cout << "MAX=" << max << endl << "MIN=" << min;
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    char arr[13] = { 'S','t','r','u','c','t','P','o','i','n','t','e','r' };
+//    char a;
+//    cin >> a;
+//    int flag;
+//    flag = 0;
+//    for (int i = 0; i < 13; i++)
+//    {
+//        if (arr[i] == a)
+//        {
+//            flag = 1;
+//            break;
+//        }
+//    }
+//    if (flag == 1)
+//    {
+//        cout << "발견";
+//    }
+//    else
+//    {
+//        cout << "미발견";
+//    }
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    char arr[8] = {};
+//    for (int i = 0; i < 8; i++)
+//    {
+//        cin >> arr[i];
+//    }
+//    char big[8];
+//    char small[8];
+//    int t = 0;
+//    int x= 0;
+//
+//    for (int i = 0; i < 8; i++)
+//    {
+//        if (arr[i] >= 'A' && arr[i] <= 'Z')
+//        {
+//            big[t] = arr[i];
+//            t++;
+//        }
+//    }
+//    for (int i = 0; i < 8; i++)
+//    {
+//        if (arr[i] >= 'a' && arr[i] <= 'z')
+//        {
+//            small[x] = arr[i];
+//            x++;
+//        }
+//    }
+//    cout << "big=";
+//    for (int i = 0; i < t; i++)
+//    {
+//        cout << big[i];
+//    }
+//    cout <<endl<< "small=";
+//    for (int i = 0; i < x; i++)
+//    {
+//        cout << small[i];
+//    }
+//
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int arr[2][5] = {
+//    {3,2,6,2,4},
+//    {1,4,2,6,5}
+//};
+//int KFC(int a) {
+//    for (int y = 0; y < 2; y++)
+//    {
+//        for (int x = 0; x < 5; x++)
+//        {
+//            if (arr[y][x] == a)
+//            {
+//                return 1;
+//            }
+//        }
+//    }
+//    return 0;
+//}
+//int main()
+//{
+//    int a;
+//    cin >> a;
+//
+//    ;
+//    if (KFC(a)==1)
+//    {
+//        cout << "값이 존재합니다";
+//    }
+//    else
+//    {
+//        cout << "값이 없습니다";
+//    }
+//    return 0;
+//}
+
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    int arr[4][4] = {
+//        {1,3,6,2},
+//        {4,2,4,5},
+//        {6,3,7,3},
+//        {1,5,4,6}
+//    };
+//    int a;
+//    cin >> a;
+//    int select[16];
+//    int t = 0;
+//    for (int y = 0; y < 4; y++)
+//    {
+//        for (int x = 0; x < 4; x++)
+//        {
+//            if (arr[y][x] > a)
+//            {
+//                select[t] = arr[y][x];
+//                t++;
+//            }
+//        }
+//    }
+//    for (int i = 0; i < t; i++)
+//    {
+//        cout << select[i] << ' ';
+//    }
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    int arr[6] = {'D','F','G','D','A','Q'};
+//    char a,b;
+//    cin >> a>>b;
+//        int flag;
+//        flag = 0;
+//        for (int i = 0; i < 6; i++)
+//        {
+//            if (arr[i]>=a&& arr[i]<=b)
+//            {
+//                flag = 1;
+//                break;
+//            }
+//        }
+//            if (flag == 1)
+//            {
+//                cout << "발견!!!";
+//            }
+//            else
+//            {
+//                cout << "미발견!!!";
+//            }
+//      
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//int count(int a) {
+//    int arr[3][3] = {
+//    {1,1,1},
+//    {1,2,1},
+//    {3,6,3}
+//    };
+//    int cnt = 0;
+//    for (int y = 0; y < 3; y++)
+//    {
+//        for (int x = 0; x < 3; x++)
+//        {
+//            if (arr[y][x] == a)
+//            {
+//                cnt++;
+//            }
+//        }
+//    }
+//    return cnt;
+//}
+//
+//int main()
+//{
+//    int a;
+//    cin >> a;
+//    cout << count(a);
+//
+//    return 0;
+//}
+
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    char arr[3][5] = {
+//        {'a','b','a','c','z'},
+//        {'c','t','a','c','d'},
+//        {'c','c','c','c','a'}
+//    };
+//    char a;
+//    cin >> a;
+//    int cnt = 0;
+//    for (int y = 0; y < 3; y++)
+//    {
+//        for (int x = 0; x < 5; x++)
+//        {
+//            if (arr[y][x] == a)
+//            {
+//                cnt++;
+//            }
+//        }
+//    }
+//
+//            if (cnt >=7)
+//            {
+//                cout << "세상에";
+//            }
+//            else if (cnt >= 5)
+//            {
+//                cout << "와우";
+//            }
+//            else if (cnt >=3 )
+//            {
+//                cout << "이야";
+//            }
+//            else
+//            {
+//                cout << "이런";
+//            }
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    int arr[2][3];
+//
+//    for (int  y = 0; y < 2; y++)
+//    {
+//        for (int x = 0; x < 3; x++)
+//        {
+//            cin >> arr[y][x];
+//        }
+//    }
+//    for (int y = 0; y < 2; y++)
+//    {
+//        for (int x = 0; x < 3; x++)
+//        {
+//            if (arr[y][x]== 0)
+//            {
+//               cout << '#';
+//            }
+//            else
+//            {
+//                cout << arr[y][x];
+//            }
+//        }
+//        cout << endl;
+//    }
+//
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    char arr[3][3] = {
+//        {'a','b','E'},
+//        {'E','2','W'},
+//        {'3','2','4'}
+//    };
+//    cout << 'A' << ' ' << 'B' << ' ' << 'e' << endl;
+//    cout << 'e' << ' ' << 7 << ' ' << 'w' << endl;
+//    cout << 8 << ' ' << 7 << ' ' << 9 << endl;
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	char v[3][3] =
+//	{
+//		'a','b','E',
+//		'E','2','W',
+//		'3','2','4'
+//	};
+//	int x, y;
+//	for (y = 0; y < 3; y++)
+//	{
+//		for (x = 0; x < 3; x++)
+//		{
+//			if (v[y][x] >= 'A' && v[y][x] <= 'Z')
+//			{
+//				cout << (char)(v[y][x] + 32) << " ";
+//			}
+//			else if (v[y][x] >= 'a' && v[y][x] <= 'z')
+//			{
+//				cout << (char)(v[y][x] - 32) << " ";
+//			}
+//			else if (v[y][x] - '0' >= 0 && v[y][x] - '0' <= 9)
+//			{
+//				cout << (int)(v[y][x] - '0') + 5 << " ";
+//			}
+//		}
+//		cout << "\n";
+//	}
+//
+//	return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//char arr[3][3] =
+//{
+//	'a','b','d',
+//	'e','w','z',
+//	'q','v','a'
+//};
+//char input(char a) {
+//	
+//	cin >> a;
+//	return a;
+//}
+//char process(char a) {
+//	char b = (char)(a + 32);
+//	int flag = 0;
+//	for (int y = 0; y < 3; y++)
+//	{
+//		for (int x = 0; x < 3; x++)
+//		{
+//			if (arr[y][x] == b) {
+//				flag++;
+//			}
+//		}
+//	}
+//	if (flag >=1)
+//	{
+//		cout << "존재";
+//	}
+//	else if (flag == 0)
+//	{
+//		cout << "없음";
+//	}
+//}
+//
+//int main()
+//{
+//	char a;
+//	char t = input(a);
+//	process(t);
+//	return 0;
+//}
+
+
+// ==========================================================
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//	int arr[3][3] =
+//	{
+//		3,1,6,
+//		7,8,4,
+//		9,2,3
+//	};
+//	int a, b, c;
+//	cin >> a >> b >> c;
+//	arr[b][a] = c;
+//	int max = -99;
+//	int min = 99;
+//	for (int y = 0; y < 3; y++)
+//	{
+//		for (int  x = 0; x < 3; x++)
+//		{
+//			if (arr[y][x]>max)
+//			{
+//				max = arr[y][x];
+//			}
+//		}
+//	}
+//	for (int y = 0; y < 3; y++)
+//	{
+//		for (int x = 0; x < 3; x++)
+//		{
+//			if (arr[y][x] < min)
+//			{
+//				min = arr[y][x];
+//			}
+//		}
+//	}
+//	cout << max + min;
+//
+//	return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int main()
+//{
+//    int arr[2][3];
+//    for (int y = 1; y >= 0; y--)
+//    {
+//        for (int x = 2; x >= 0; x--)
+//        {
+//            cin >> arr[y][x];
+//        }
+//    }
+//    
+//    int select[6];
+//    int t = 0;
+//    for (int y = 0; y < 2; y++)
+//    {
+//        for (int x = 0; x < 3; x++)
+//        {
+//            select[t] = arr[y][x];
+//            t++;
+//        }
+//    }
+//    int temp;
+//    temp = select[0];
+//    select[0] = select[5];
+//    select[5] = temp;
+//    for (int i = 0; i < 6; i++)
+//    {
+//        cout << select[i] << ' ';
+//    }
+//    return 0;
+//}
+
 #include <iostream>
 using namespace std;
 
 int main()
 {
-    int a, b, temp;
-    cin >> a >> b ;
-    int* p;
-    int* t;
-    p = &a;
-    t = &b;
-    temp = * p;
-     *p = * t ;
-     *t = temp;
-
-    cout << *p << ' ' << *t;
+    char s[10];
+    cin >> s;
+    for (int i = 0; i < 5; i++)
+    {
+        cout << s<< endl;
+    }
     return 0;
 }
