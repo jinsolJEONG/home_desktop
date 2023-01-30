@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 1px solid black;
+            height: 800px;
+            width: 1200px;
+            display: flex;
+            flex-direction: column;
+        }
+        header{
+            border: 1px solid black;
+            flex: 1;
+            text-align: center;
+        }
+        main{
+            flex: 9;
+            border: 1px solid black;
+            position: relative;
+            
+        }
+        .profile{
+            border: 1px solid black;
+            background-image: url(./고양이.jpg);
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            background-size: cover;
+            position: absolute;
+            left: 30px;
+            top: 30px;
+        }
+        .box{
+            border: 1px solid black;
+            position: absolute;
+            width: 70%;
+            height: 50%;
+            display: flex;
+            right: 30px;
+            bottom: 30px;
+        }
+        .box-left{
+            border: 1px solid black;
+            flex: 1;
+        }
+        .box-right{
+            /* border: 1px solid black; */
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+        }
+        .box-top{
+            border: 1px solid black;
+            flex :1
+        }
+        .box-bottom{
+            border: 1px solid black;
+            flex :1
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><h1>진솔이 사이트</h1></header>
+        <main>
+            <div class="profile"></div>
+            <div class="box">
+                <div class="box-left"></div>
+                <div class="box-right">
+                    <div class="box-top"><h2>은비는 너무 이뻐>_<</h2></div>
+                    <div class="box-bottom"></div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+</html>

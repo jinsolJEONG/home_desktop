@@ -1422,16 +1422,251 @@
 //    return 0;
 //}
 
+//#include <iostream>
+//using namespace std;
+//
+//void getName(char* a, char* b) {
+//    cin >> *a >> *b;
+//}
+//
+//int main()
+//{
+//    char a, b;
+//    getName(&a, &b);
+//    if (a > b)
+//    {
+//        cout << b;
+//    }
+//    else {
+//        cout << a;
+//    }
+//
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void moom(int a, int* x, int* y, int* z) {
+//    *x = a - 4;
+//    *y = a + 3;
+//    *z = a * 2;
+//}
+//
+//int main()
+//{
+//    int a;
+//    int x, y, z;
+//    cin >> a;
+//    moom(a, &x, &y, &z);
+//    
+//    cout << x <<" " << y <<' ' << z;
+//    return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//int stringLen(char vect[100]) {
+//	int len;
+//	for (int i = 0; i < 100; i++) {
+//		if (vect[i] == NULL) {
+//			len = i;
+//			break;
+//		}
+//	}
+//	return len;
+//}
+//
+//int main()
+//{
+//	char vect[100];
+//	cin >> vect;
+//	stringLen(vect);
+//	cout << stringLen(vect) << "글자";
+//
+//	return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//void abc(int a, int b, int* sum , int* gop){
+//    *sum = a + b;
+//    *gop = a * b;
+//}
+//
+//int main()
+//{
+//    int a, b;
+//    cin >> a >> b;
+//    int sum, gop;
+//    abc(a, b, &sum, &gop);
+//    cout << sum << ' ' << gop;
+//    return 0;
+//}
+
+
+//#include <iostream>
+//using namespace std;
+//void kfc(int* cnt1, int* cnt2) {
+//	char vect[100];
+//	cin >> vect;
+//	int t1 = 0;
+//	int t2 = 0;
+//
+//	for (int i = 0; i < 100; i++) {
+//		if (vect[i] >= 'A' && vect[i] <= 'Z') {
+//			t1++;
+//		}
+//		else if (vect[i] == NULL) {
+//			break;
+//		}
+//	}
+//	for (int i = 0; i < 100; i++) {
+//		if (vect[i] >= 'a' && vect[i] <= 'z') {
+//			t2++;
+//		}
+//		else if (vect[i] == NULL) {
+//			break;
+//		}
+//	}
+//	*cnt1 = t1;
+//	*cnt2 = t2;
+//}
+//
+//int main()
+//{
+//	int cnt1 = 0;
+//	int cnt2 = 0;
+//	kfc(&cnt1, &cnt2);
+//	cout << "대문자"<<cnt1 << "개"<<endl;
+//	cout << "소문자" << cnt2 << "개";
+//	return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//int arr[2][6] = {
+//	4,5,6,1,3,1,
+//	2,1,3,6,3,6
+//};
+//
+//void input(int* a, int* b, int* c) {
+//
+//	cin >> *a >> *b >> *c;
+//}
+//void process(int a, int b, int c, int* r1, int* r2, int* r3) {
+//	for (int y = 0; y < 2; y++)
+//	{
+//		for (int  x = 0; x < 6; x++)
+//		{
+//			if (a == arr[y][x])
+//			{
+//				(*r1)++;
+//			}
+//			if (b == arr[y][x])
+//			{
+//				(*r2)++;
+//			}
+//			if (c == arr[y][x])
+//			{
+//				(*r3)++;
+//			}
+//		}
+//	}
+//}
+//void output(int a, int b, int c, int r1, int r2, int r3) {
+//	cout << a << '=' << r1 << "개" << endl;
+//	cout << b << '=' << r2 << "개" << endl;
+//	cout << c << '=' << r3 << "개";
+//}
+//
+//int main()
+//{
+//	int a, b, c;
+//	int r1 = 0;
+//	int r2 = 0;
+//	int r3 = 0;
+//	input(&a, &b, &c);
+//	process(a, b, c, &r1, &r2, &r3);
+//	output(a, b, c, r1, r2, r3);
+//	return 0;
+//}
+
+//#include <iostream>
+//using namespace std;
+//
+//char arr[3][3] = {
+//	'A','D','F',
+//	'Q','W','E',
+//	'Z','X','C'
+//};
+//
+//void find(char a,  int* y, int* x) {
+//	for (int i = 0; i < 3; i++)
+//	{
+//		for (int t = 0; t < 3; t++)
+//		{
+//			if (a == arr[i][t])
+//			{
+//				*y = i;
+//				*x = t;
+//				break;
+//			}
+//
+//		}
+//	}
+//}
+//
+//int main()
+//{
+//	char a;
+//	cin >> a;
+//	int x, y;
+//	find(a,  &y, &x);
+//	cout << y << ',' << x;
+//	return 0;
+//}
+
 #include <iostream>
 using namespace std;
 
+void find(int arr[5], int arr2[5]) {
+	int flag = 0;
+	for (int i = 0; i < 5; i++)
+	{
+		if (arr[i] != arr2[i])
+			{
+			flag = 1;
+			break;
+			}
+		
+
+	}
+	if (flag == 1)
+	{
+		cout << "두배열은같지않음";
+	}
+	else if (flag == 0)
+	{
+		cout << "두배열은완전같음";
+	}
+	
+}
+
 int main()
 {
-    char s[10];
-    cin >> s;
-    for (int i = 0; i < 5; i++)
-    {
-        cout << s<< endl;
-    }
-    return 0;
+	int arr[5] = {
+		3,5,1,2,7
+	};
+	int arr2[5];
+	for (int i = 0; i < 5; i++)
+	{
+		cin >> arr2[i];
+	}
+
+	find(arr, arr2);
+
+	return 0;
 }
